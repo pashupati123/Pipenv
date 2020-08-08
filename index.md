@@ -1,37 +1,70 @@
-## Welcome to GitHub Pages
+## Development of Python Projects with Different Dependencies using pipenv.
 
 You can use the [editor on GitHub](https://github.com/pashupati123/Pipenv/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### pipenv Introduction
+
+Pipenv is a packaging tool python which provide an isolated environment for the development of the python project without any interference of exiting or overriding with the installed packages of the other python project. 
+It provides deterministic build by providing the production environment match those in the development environment exactly.
+It consolidates and simplifies the development process to a single command line tool which very easy to use and handle.
+
+
+
+### First, let’s install it
 
 ```markdown
-Syntax highlighted code block
+pip install pipenv
 
-# Header 1
-## Header 2
-### Header 3
+```
+### Spawn Shell in a Virtual environment
+Create and open Python application.
 
-- Bulleted
-- List
+```markdown
+pipenv install —python <#python-version>
+```
+It  introduces two new files, the Pipfile (which is meant to replace requirements.txt) with the specific python version specified in command and the Pipfile.lock (which enables deterministic builds).
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```markdown
+pipenv shell
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+spawn a shell in a virtual environment to isolate the development of this app:
+This will create a virtual environment if one doesn’t already exist.
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pashupati123/Pipenv/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Install the 3rd party package for this app
+
+```markdown
+pipenv install <specific-package>
+```
+It will put the dependency in  [packages] location in the Pipfile.
+
+```markdown
+pipenv install <specific-package>  --dev
+```
+Providing the --dev argument will put the dependency in a special [dev-packages] location in the Pipfile, which will use dependency only for development eg: pytest - Python testing package.
+
+
+### Run the app locally 
+```markdown
+pipenv run python <python-file-name>
+```
+
+### Ready To Push 
+Okay, so let’s say you’ve got everything working in your local development environment and you’re ready to push it to production. To do that, you need to lock your environment so you can ensure you have the same one in production.
+It enables deterministic builds by specifying the exact requirements for reproducing an environment. It contains exact versions for packages and hashes to support more secure verification.
+
+```markdown
+pipenv lock
+```
+
+
+
+
+
