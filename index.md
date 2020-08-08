@@ -2,7 +2,9 @@
 
 
 ### pipenv Introduction
-###### Pipenv is a packaging tool python which provide an isolated environment for the development of the python project without any interference of exiting or overriding with the installed packages of the other python project. It provides deterministic build by providing the production environment match those in the development environment exactly.It consolidates and simplifies the development process to a single command line tool which very easy to use and handle.
+- Pipenv is a packaging tool python which provide an isolated environment for the development of the python project without any interference of exiting or overriding with the installed packages of the other python project. 
+- It provides deterministic build by providing the production environment match those in the development environment exactly.
+- It consolidates and simplifies the development process to a single command line tool which very easy to use and handle.
 
 
 
