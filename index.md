@@ -18,7 +18,7 @@ pip install pipenv
 Create and open Python application.
 
 ```markdown
-pipenv install —python <#python-version>
+pipenv install --python <#python-version>
 ```
 It  introduces two new files, the Pipfile (which is meant to replace requirements.txt) with the specific python version specified in command and the Pipfile.lock (which enables deterministic builds).
 
@@ -52,7 +52,7 @@ pipenv run python <python-file-name>
 
 ### Ready To Push 
 Okay, so let’s say you’ve got everything working in your local development environment and you’re ready to push it to production. To do that, you need to lock your environment so you can ensure you have the same one in production.
-It enables deterministic builds by specifying the exact requirements for reproducing an environment. It contains exact versions for packages and hashes to support more secure verification.
+It enables deterministic builds by specifying the exact requirements for reproducing an environment. It contains exact versions for packages and hashes to support more secure verification. Exit from isolated environment by runnug "exit" command and run the below pipenv command before pushing your development changes.
 
 ```markdown
 pipenv lock
