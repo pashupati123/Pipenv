@@ -1,15 +1,11 @@
-## Development of Python Projects with Different Dependencies using pipenv.
-
-You can use the [editor on GitHub](https://github.com/pashupati123/Pipenv/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Development of Python Projects with Different Dependencies using pipenv
 
 
 ### pipenv Introduction
 
-Pipenv is a packaging tool python which provide an isolated environment for the development of the python project without any interference of exiting or overriding with the installed packages of the other python project. 
-It provides deterministic build by providing the production environment match those in the development environment exactly.
-It consolidates and simplifies the development process to a single command line tool which very easy to use and handle.
+## Pipenv is a packaging tool python which provide an isolated environment for the development of the python project without any interference of exiting or overriding with the installed packages of the other python project. 
+## It provides deterministic build by providing the production environment match those in the development environment exactly.
+## It consolidates and simplifies the development process to a single command line tool which very easy to use and handle.
 
 
 
@@ -28,11 +24,10 @@ pipenv install —python <#python-version>
 It  introduces two new files, the Pipfile (which is meant to replace requirements.txt) with the specific python version specified in command and the Pipfile.lock (which enables deterministic builds).
 
 
+spawn a shell in a virtual environment to isolate the development of this app.
 ```markdown
 pipenv shell
 ```
-
-spawn a shell in a virtual environment to isolate the development of this app:
 This will create a virtual environment if one doesn’t already exist.
 
 
